@@ -9,7 +9,7 @@
 #include <ngx_event.h>
 #include <nginx.h>
 #include "ngx_rtmp.h"
-
+#include "S3_wrap.h"
 
 static void *ngx_rtmp_core_create_main_conf(ngx_conf_t *cf);
 static void *ngx_rtmp_core_create_srv_conf(ngx_conf_t *cf);
@@ -192,6 +192,7 @@ ngx_module_t  ngx_rtmp_core_module = {
 static void *
 ngx_rtmp_core_create_main_conf(ngx_conf_t *cf)
 {
+    hello_world();
     ngx_rtmp_core_main_conf_t  *cmcf;
 
     cmcf = ngx_pcalloc(cf->pool, sizeof(ngx_rtmp_core_main_conf_t));
