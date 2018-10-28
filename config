@@ -129,7 +129,7 @@ else
     CFLAGS="$CFLAGS -I$ngx_addon_dir"
 fi
 
-CORE_LIBS="$CORE_LIBS -L/home/carlosb/Desktop/tools/test_wrap/lib -ls3_wrap"
+CORE_LIBS="$CORE_LIBS -L/home/ubuntu/test_wrap -ls3_wrap"
 
 USE_OPENSSL=YES
 
